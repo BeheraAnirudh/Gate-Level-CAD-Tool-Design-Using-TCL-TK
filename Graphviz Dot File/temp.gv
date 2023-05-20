@@ -1,0 +1,10 @@
+  input in_a, in_b, in_c;
+  output out_s, out_c;
+  wire   n13, n14, n15;
+
+  XOR2X1 I21 ( .A(in_a), .B(in_b), .Y(n13) );
+  INVX1 I22 ( .A(n13), .Y(out_s) );
+  INVX1 I23 ( .A(in_c), .Y(n14) );
+  AOI22X1 I24 ( .A(in_a), .B(in_b), .C(in_c), .D(n14), .Y(n15) );
+  INVX1 I25 ( .A(n15), .Y(out_c) );
+endmodule

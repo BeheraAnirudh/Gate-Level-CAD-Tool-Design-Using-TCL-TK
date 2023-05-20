@@ -1,0 +1,65 @@
+module Project_56 ( in_a, in_b, in_c, out_s, out_c );
+  input in_a, in_b, in_c;
+  output out_s, out_c;
+  wire   n13, n14, n15;
+
+  XOR2X1 I21 ( .A(in_a), .B(in_b), .Y(n13) );
+  INVX1 I22 ( .A(n13), .Y(out_s) );
+  INVX1 I23 ( .A(in_c), .Y(n14) );
+  AOI22X1 I24 ( .A(in_a), .B(in_b), .C(in_c), .D(n14), .Y(n15) );
+  INVX1 I25 ( .A(n15), .Y(out_c) );
+endmodule
+
+
+module Project_57 ( in_a, in_b, in_c, out_s, out_c );
+  input in_a, in_b, in_c;
+  output out_s, out_c;
+  wire   n13, n14, n15;
+
+  XOR2X1 I21 ( .A(in_a), .B(in_b), .Y(n13) );
+  INVX1 I22 ( .A(n13), .Y(out_s) );
+  INVX1 I23 ( .A(in_c), .Y(n14) );
+  AOI22X1 I24 ( .A(in_a), .B(in_b), .C(in_c), .D(n14), .Y(n15) );
+  INVX1 I25 ( .A(n15), .Y(out_c) );
+endmodule
+
+
+module Project_58 ( in_a, in_b, in_c, out_s, out_c );
+  input in_a, in_b, in_c;
+  output out_s, out_c;
+  wire   n13, n14, n15;
+
+  XOR2X1 I21 ( .A(in_a), .B(in_b), .Y(n13) );
+  INVX1 I22 ( .A(n13), .Y(out_s) );
+  INVX1 I23 ( .A(in_c), .Y(n14) );
+  AOI22X1 I24 ( .A(in_a), .B(in_b), .C(in_c), .D(n14), .Y(n15) );
+  INVX1 I25 ( .A(n15), .Y(out_c) );
+endmodule
+
+
+module Project_59 ( in_a, in_b, in_c, out_s, out_c );
+  input in_a, in_b, in_c;
+  output out_s, out_c;
+  wire   n13, n14, n15;
+
+  XOR2X1 I21 ( .A(in_a), .B(in_b), .Y(n13) );
+  INVX1 I22 ( .A(n13), .Y(out_s) );
+  INVX1 I23 ( .A(in_c), .Y(n14) );
+  AOI22X1 I24 ( .A(in_a), .B(in_b), .C(in_c), .D(n14), .Y(n15) );
+  INVX1 I25 ( .A(n15), .Y(out_c) );
+endmodule
+
+
+module PRJ4b ( in_a, in_b, in_c, out_s, out_c );
+  input [3:0] in_a;
+  input [3:0] in_b;
+  output [3:0] out_s;
+  input in_c;
+  output out_c;
+  wire   co1, co2, co3;
+
+  Project_59 UUU_0 ( .in_a(in_a[0]), .in_b(in_b[0]), .in_c(in_c), .out_s(out_s[0]), .out_c(co1) );
+  Project_58 UUU_1 ( .in_a(in_a[1]), .in_b(in_b[1]), .in_c(co1), .out_s(out_s[1]), .out_c(co2) );
+  Project_57 UUU_2 ( .in_a(in_a[2]), .in_b(in_b[2]), .in_c(co2), .out_s(out_s[2]), .out_c(co3) );
+  Project_56 UUU_3 ( .in_a(in_a[3]), .in_b(in_b[3]), .in_c(co3), .out_s(out_s[3]), .out_c(out_c) );
+endmodule
