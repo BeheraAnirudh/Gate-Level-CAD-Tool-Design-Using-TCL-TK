@@ -16,3 +16,4 @@ This Library contains a project based on designing a Hierarchical Gate Level CAD
 After installing IDE we can use dedicated Tclsh or Command Window or Power Shell in Windows system.
  
 # Output Screenshorts are attached for reference.
+# Encouraged to use this work for self education but unethical practices like, copy or spreding this work is strictly not allowed.
