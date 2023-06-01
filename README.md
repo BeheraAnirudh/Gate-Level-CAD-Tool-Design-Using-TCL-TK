@@ -11,7 +11,7 @@ This Library contains a project based on designing a Hierarchical Gate Level CAD
 5. 1 bit Model GUI
 6. Leaf Nodes GUI
 
-# TCL/TK IDE is required for exicution.
+# TCL/TK IDE is required for execution.
 
 After installing IDE we can use dedicated Tclsh or Command Window or Power Shell in Windows system.
  
